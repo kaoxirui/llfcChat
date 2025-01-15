@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/testjson.dir/src/testjson.cpp.o  -o testjson  /usr/lib/x86_64-linux-gnu/libjsoncpp.so.1.7.4 
