@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="llfcchat"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/ninja -v all"/>
+					<CompileFile command="/usr/bin/ninja -v &quot;$file&quot;"/>
+					<Clean command="/usr/bin/ninja -v clean"/>
+					<DistClean command="/usr/bin/ninja -v clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/ninja -v rebuild_cache"/>
+					<CompileFile command="/usr/bin/ninja -v &quot;$file&quot;"/>
+					<Clean command="/usr/bin/ninja -v clean"/>
+					<DistClean command="/usr/bin/ninja -v clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/ninja -v edit_cache"/>
+					<CompileFile command="/usr/bin/ninja -v &quot;$file&quot;"/>
+					<Clean command="/usr/bin/ninja -v clean"/>
+					<DistClean command="/usr/bin/ninja -v clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llfcchat">
+				<Option output="/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug/llfcchat" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add directory="/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug"/>
+					<Add directory="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat"/>
+					<Add directory="/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug/llfcchat_autogen/include"/>
+					<Add directory="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/src"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtNetwork"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/ninja -v llfcchat"/>
+					<CompileFile command="/usr/bin/ninja -v &quot;$file&quot;"/>
+					<Clean command="/usr/bin/ninja -v clean"/>
+					<DistClean command="/usr/bin/ninja -v clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llfcchat/fast">
+				<Option output="/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug/llfcchat" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add directory="/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug"/>
+					<Add directory="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat"/>
+					<Add directory="/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug/llfcchat_autogen/include"/>
+					<Add directory="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/src"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtNetwork"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/ninja -v llfcchat/fast"/>
+					<CompileFile command="/usr/bin/ninja -v &quot;$file&quot;"/>
+					<Clean command="/usr/bin/ninja -v clean"/>
+					<DistClean command="/usr/bin/ninja -v clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llfcchat_autogen">
+				<Option working_dir="/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/ninja -v llfcchat_autogen"/>
+					<CompileFile command="/usr/bin/ninja -v &quot;$file&quot;"/>
+					<Clean command="/usr/bin/ninja -v clean"/>
+					<DistClean command="/usr/bin/ninja -v clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug/llfcchat_autogen/mocs_compilation.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/BubbleFrame.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/BubbleFrame.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/ChatItemBase.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/ChatItemBase.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/ChatView.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/ChatView.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/MessageTextEdit.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/MessageTextEdit.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/PictureBubble.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/PictureBubble.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/TextBubble.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/TextBubble.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/adduseritem.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/adduseritem.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/adduseritem.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfriend.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfriend.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfriend.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfrienditem.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfrienditem.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfrienditem.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfriendlist.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfriendlist.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfriendpage.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfriendpage.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfriendpage.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/authenfriend.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/authenfriend.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/authenfriend.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatdialog.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatdialog.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatdialog.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatpage.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatpage.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatpage.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatuserlist.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatuserlist.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatuserwid.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatuserwid.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatuserwid.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/clickedbtn.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/clickedbtn.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/clickedlabel.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/clickedlabel.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/clickedoncelabel.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/clickedoncelabel.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/contactuserlist.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/contactuserlist.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/conuseritem.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/conuseritem.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/conuseritem.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/customizeedit.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/customizeedit.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/customizetextedit.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/customizetextedit.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/findfaildlg.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/findfaildlg.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/findfaildlg.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/findsuccessdlg.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/findsuccessdlg.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/findsuccessdlg.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/friendinfopage.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/friendinfopage.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/friendinfopage.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/friendlabel.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/friendlabel.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/friendlabel.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/global.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/global.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/grouptipitem.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/grouptipitem.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/grouptipitem.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/httpmgr.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/httpmgr.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/invaliditem.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/invaliditem.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/lineitem.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/lineitem.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/lineitem.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/listitembase.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/listitembase.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/loadingdlg.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/loadingdlg.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/loadingdlg.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/logindialog.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/logindialog.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/logindialog.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/main.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/mainwindow.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/mainwindow.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/mainwindow.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/registerdialog.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/registerdialog.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/registerdialog.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/resetdialog.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/resetdialog.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/resetdialog.ui">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/searchlist.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/searchlist.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/singleton.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/statelabel.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/statelabel.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/statewidget.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/statewidget.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/tcpmgr.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/tcpmgr.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/timerbtn.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/timerbtn.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/userdata.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/userdata.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/usermgr.cpp">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/usermgr.h">
+			<Option target="llfcchat"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,440 @@
+{
+	"BUILD_DIR" : "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/build/llfcchat_autogen",
+	"CMAKE_BINARY_DIR" : "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_SOURCE_DIR" : "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat",
+	"HEADERS" : 
+	[
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/BubbleFrame.h",
+			"MU",
+			"EWIEGA46WW/moc_BubbleFrame.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/ChatItemBase.h",
+			"MU",
+			"EWIEGA46WW/moc_ChatItemBase.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/ChatView.h",
+			"MU",
+			"EWIEGA46WW/moc_ChatView.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/MessageTextEdit.h",
+			"MU",
+			"EWIEGA46WW/moc_MessageTextEdit.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/PictureBubble.h",
+			"MU",
+			"EWIEGA46WW/moc_PictureBubble.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/TextBubble.h",
+			"MU",
+			"EWIEGA46WW/moc_TextBubble.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/adduseritem.h",
+			"MU",
+			"EWIEGA46WW/moc_adduseritem.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfriend.h",
+			"MU",
+			"EWIEGA46WW/moc_applyfriend.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfrienditem.h",
+			"MU",
+			"EWIEGA46WW/moc_applyfrienditem.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfriendlist.h",
+			"MU",
+			"EWIEGA46WW/moc_applyfriendlist.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfriendpage.h",
+			"MU",
+			"EWIEGA46WW/moc_applyfriendpage.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/authenfriend.h",
+			"MU",
+			"EWIEGA46WW/moc_authenfriend.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_chatdialog.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatpage.h",
+			"MU",
+			"EWIEGA46WW/moc_chatpage.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatuserlist.h",
+			"MU",
+			"EWIEGA46WW/moc_chatuserlist.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatuserwid.h",
+			"MU",
+			"EWIEGA46WW/moc_chatuserwid.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/clickedbtn.h",
+			"MU",
+			"EWIEGA46WW/moc_clickedbtn.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/clickedlabel.h",
+			"MU",
+			"EWIEGA46WW/moc_clickedlabel.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/clickedoncelabel.h",
+			"MU",
+			"EWIEGA46WW/moc_clickedoncelabel.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/contactuserlist.h",
+			"MU",
+			"EWIEGA46WW/moc_contactuserlist.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/conuseritem.h",
+			"MU",
+			"EWIEGA46WW/moc_conuseritem.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/customizeedit.h",
+			"MU",
+			"EWIEGA46WW/moc_customizeedit.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/customizetextedit.h",
+			"MU",
+			"EWIEGA46WW/moc_customizetextedit.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/findfaildlg.h",
+			"MU",
+			"EWIEGA46WW/moc_findfaildlg.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/findsuccessdlg.h",
+			"MU",
+			"EWIEGA46WW/moc_findsuccessdlg.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/friendinfopage.h",
+			"MU",
+			"EWIEGA46WW/moc_friendinfopage.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/friendlabel.h",
+			"MU",
+			"EWIEGA46WW/moc_friendlabel.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/global.h",
+			"MU",
+			"EWIEGA46WW/moc_global.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/grouptipitem.h",
+			"MU",
+			"EWIEGA46WW/moc_grouptipitem.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/httpmgr.h",
+			"MU",
+			"EWIEGA46WW/moc_httpmgr.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/invaliditem.h",
+			"MU",
+			"EWIEGA46WW/moc_invaliditem.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/lineitem.h",
+			"MU",
+			"EWIEGA46WW/moc_lineitem.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/listitembase.h",
+			"MU",
+			"EWIEGA46WW/moc_listitembase.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/loadingdlg.h",
+			"MU",
+			"EWIEGA46WW/moc_loadingdlg.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/logindialog.h",
+			"MU",
+			"EWIEGA46WW/moc_logindialog.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/mainwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_mainwindow.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/registerdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_registerdialog.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/resetdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_resetdialog.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/searchlist.h",
+			"MU",
+			"EWIEGA46WW/moc_searchlist.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/singleton.h",
+			"MU",
+			"EWIEGA46WW/moc_singleton.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/statelabel.h",
+			"MU",
+			"EWIEGA46WW/moc_statelabel.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/statewidget.h",
+			"MU",
+			"EWIEGA46WW/moc_statewidget.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/tcpmgr.h",
+			"MU",
+			"EWIEGA46WW/moc_tcpmgr.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/timerbtn.h",
+			"MU",
+			"EWIEGA46WW/moc_timerbtn.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/userdata.h",
+			"MU",
+			"EWIEGA46WW/moc_userdata.cpp"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/usermgr.h",
+			"MU",
+			"EWIEGA46WW/moc_usermgr.cpp"
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/build/llfcchat_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/build/llfcchat_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
+		"QT_NO_DEBUG",
+		"QT_WIDGETS_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/build",
+		"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat",
+		"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/src",
+		"/usr/include/x86_64-linux-gnu/qt5",
+		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/usr/include/x86_64-linux-gnu/qt5/QtNetwork",
+		"/usr/include/c++/10",
+		"/usr/include/x86_64-linux-gnu/c++/10",
+		"/usr/include/c++/10/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/10/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu",
+		"/usr/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : true,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/build/llfcchat_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 6,
+	"PARSE_CACHE_FILE" : "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/build/CMakeFiles/llfcchat_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
+	"QT_VERSION_MAJOR" : 5,
+	"SETTINGS_FILE" : "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/build/CMakeFiles/llfcchat_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/BubbleFrame.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/ChatItemBase.cpp",
+			"MU"
+		],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/ChatView.cpp", "MU" ],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/MessageTextEdit.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/PictureBubble.cpp",
+			"MU"
+		],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/TextBubble.cpp", "MU" ],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/adduseritem.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfriend.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfrienditem.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfriendlist.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/applyfriendpage.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/authenfriend.cpp",
+			"MU"
+		],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatdialog.cpp", "MU" ],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatpage.cpp", "MU" ],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatuserlist.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/chatuserwid.cpp",
+			"MU"
+		],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/clickedbtn.cpp", "MU" ],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/clickedlabel.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/clickedoncelabel.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/contactuserlist.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/conuseritem.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/customizeedit.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/customizetextedit.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/findfaildlg.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/findsuccessdlg.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/friendinfopage.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/friendlabel.cpp",
+			"MU"
+		],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/global.cpp", "MU" ],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/grouptipitem.cpp",
+			"MU"
+		],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/httpmgr.cpp", "MU" ],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/invaliditem.cpp",
+			"MU"
+		],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/lineitem.cpp", "MU" ],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/listitembase.cpp",
+			"MU"
+		],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/loadingdlg.cpp", "MU" ],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/logindialog.cpp",
+			"MU"
+		],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/main.cpp", "MU" ],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/mainwindow.cpp", "MU" ],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/registerdialog.cpp",
+			"MU"
+		],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/resetdialog.cpp",
+			"MU"
+		],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/searchlist.cpp", "MU" ],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/statelabel.cpp", "MU" ],
+		[
+			"/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/statewidget.cpp",
+			"MU"
+		],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/tcpmgr.cpp", "MU" ],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/timerbtn.cpp", "MU" ],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/userdata.cpp", "MU" ],
+		[ "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat/usermgr.cpp", "MU" ]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

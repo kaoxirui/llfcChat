@@ -1,0 +1,68 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "llfcchat",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "llfcchat::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-llfcchat-Debug-66f938850b5fd05f841e.json",
+					"name" : "llfcchat",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "llfcchat_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-llfcchat_autogen-Debug-73e0381f0a697d44cbb7.json",
+					"name" : "llfcchat_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug",
+		"source" : "/home/kao/cpp/llfcChat/llfcChatClient/llfcchat"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

@@ -1,0 +1,4 @@
+/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug/CMakeFiles/llfcchat.dir
+/home/kao/cpp/llfcChat/llfcChatClient/build-llfcchat-Desktop-Debug/CMakeFiles/llfcchat_autogen.dir

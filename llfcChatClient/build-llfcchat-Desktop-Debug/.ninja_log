@@ -1,0 +1,27 @@
+# ninja log v5
+0	83	0	CMakeFiles/llfcchat_autogen	3c4ad21d5c7c55a5
+0	83	0	llfcchat_autogen/mocs_compilation.cpp	3c4ad21d5c7c55a5
+83	569	1736928153570230078	CMakeFiles/llfcchat.dir/llfcchat_autogen/mocs_compilation.cpp.o	f0465f576d934c8a
+83	633	1736928153634230440	CMakeFiles/llfcchat.dir/mainwindow.cpp.o	52aa0b138cc81498
+83	642	1736928153642230485	CMakeFiles/llfcchat.dir/main.cpp.o	7056d692b3ae04c3
+642	804	1736928153806231414	llfcchat	fba0b49cf20ddd38
+0	657	0	CMakeFiles/llfcchat_autogen	3c4ad21d5c7c55a5
+0	657	0	llfcchat_autogen/mocs_compilation.cpp	3c4ad21d5c7c55a5
+658	1402	1736929244468466735	CMakeFiles/llfcchat.dir/ChatView.cpp.o	d2f9c01deafb6e30
+1	14	0	CMakeFiles/llfcchat_autogen	3c4ad21d5c7c55a5
+1	14	0	llfcchat_autogen/mocs_compilation.cpp	3c4ad21d5c7c55a5
+1	770	0	CMakeFiles/llfcchat_autogen	3c4ad21d5c7c55a5
+1	770	0	llfcchat_autogen/mocs_compilation.cpp	3c4ad21d5c7c55a5
+771	2253	1736929675927000030	CMakeFiles/llfcchat.dir/ChatItemBase.cpp.o	7f5e71d80d526ebd
+770	2254	1736929675927000030	CMakeFiles/llfcchat.dir/adduseritem.cpp.o	393b24971b111462
+771	2309	1736929675982999376	CMakeFiles/llfcchat.dir/BubbleFrame.cpp.o	a5401c614a5052a4
+770	2514	1736929676186997000	CMakeFiles/llfcchat.dir/applyfriendlist.cpp.o	f238ddc37491514a
+770	2553	1736929676226996534	CMakeFiles/llfcchat.dir/main.cpp.o	6916235ffca4c446
+770	2592	1736929676266996068	CMakeFiles/llfcchat.dir/applyfrienditem.cpp.o	4f1f3d4bbea5df5a
+770	2608	1736929676278995928	CMakeFiles/llfcchat.dir/mainwindow.cpp.o	438c641eb0a782a2
+770	2976	1736929676646991640	CMakeFiles/llfcchat.dir/applyfriend.cpp.o	30c9cdb877594ef6
+772	2983	1736929676654991547	CMakeFiles/llfcchat.dir/chatuserlist.cpp.o	50410dafdaed0bfa
+770	2998	1736929676670991360	CMakeFiles/llfcchat.dir/applyfriendpage.cpp.o	d55fa38cf6f8d10a
+770	3050	1736929676722990754	CMakeFiles/llfcchat.dir/authenfriend.cpp.o	e3138e3627dff4cc
+770	3078	1736929676750990428	CMakeFiles/llfcchat.dir/llfcchat_autogen/mocs_compilation.cpp.o	5428a6e54e76dce8
+771	3497	1736929677166985582	CMakeFiles/llfcchat.dir/chatdialog.cpp.o	c93e36bbbe4733d6
