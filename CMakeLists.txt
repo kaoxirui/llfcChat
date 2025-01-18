@@ -20,6 +20,8 @@ set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS} -O2 -DNDEBUG")
 
 set(Boost_INCLUDE_DIR "/usr/include")
 find_package(Boost REQUIRED COMPONENTS system filesystem)
+find_package(jsoncpp REQUIRED)
+
 # find_package(Protobuf REQUIRED)
 # find_package(gRPC CONFIG REQUIRED)
 
