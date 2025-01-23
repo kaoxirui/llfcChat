@@ -1,7 +1,7 @@
 //在cpp里include，防止互引用
 #include "HttpConnection.h"
 #include "LogicSystem.h"
-
+#include "VarifyGrpcClient.h"
 void LogicSystem::RegGet(std::string url, HttpHandler handler) {
     // LOG_DEBUG("LogicSystem::RegGet - Registering GET handler for URL: %s", url.c_str());
     _get_handler.insert(make_pair(url, handler));
@@ -49,8 +49,9 @@ LogicSystem::LogicSystem() {
         }
 
         auto email = src_root["email"].asString();
+        GetVarifyRsp rsp = VarifyGrpcClient::GetInstance()->GetVarifyCode(email);
         LOG_DEBUG("email is %s", email.c_str());
-        root["error"] = 0;
+        root["error"] = rsp.error();
         root["email"] = src_root["email"];
         std::string jsonstr = root.toStyledString();
         beast::ostream(connection->_response.body()) << jsonstr;

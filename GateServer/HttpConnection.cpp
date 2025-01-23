@@ -1,7 +1,7 @@
 #include "HttpConnection.h"
 #include "LogicSystem.h"
 
-HttpConnection::HttpConnection(tcp::socket socket) : _socket(std::move(socket)) {
+HttpConnection::HttpConnection(boost::asio::io_context& ioc) : _socket(ioc) {
     // LOG_DEBUG("HttpConnection created for socket");
 }
 void HttpConnection::Start() {
