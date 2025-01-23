@@ -39,7 +39,7 @@ docker run -it -d \
 -v ${MONITOR_HOME_DIR}:/opt \
 -v ${XDG_RUNTIME_DIR}:${XDG_RUNTIME_DIR} \
 --network host \
-llfcchat:v1
+llfcchat:v2
 
 # -v挂载  -e指定容器内的环境变量
 # -it交互  -d后台运行（不会影响此时的终端）
