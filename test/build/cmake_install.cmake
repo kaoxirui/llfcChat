@@ -1,4 +1,4 @@
-# Install script for directory: /home/kao/cpp/llfcChat/test
+# Install script for directory: /opt/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/kao/cpp/llfcChat/test/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/opt/test/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

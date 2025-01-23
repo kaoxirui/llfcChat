@@ -1,3 +1,4 @@
-/home/kao/cpp/llfcChat/test/build/CMakeFiles/rebuild_cache.dir
-/home/kao/cpp/llfcChat/test/build/CMakeFiles/edit_cache.dir
-/home/kao/cpp/llfcChat/test/build/CMakeFiles/testjson.dir
+/opt/test/build/CMakeFiles/rebuild_cache.dir
+/opt/test/build/CMakeFiles/edit_cache.dir
+/opt/test/build/CMakeFiles/testredis.dir
+/opt/test/build/CMakeFiles/testjson.dir

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kao/cpp/llfcChat/test
+CMAKE_SOURCE_DIR = /opt/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kao/cpp/llfcChat/test/build
+CMAKE_BINARY_DIR = /opt/test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kao/cpp/llfcChat/test/build/CMakeFiles /home/kao/cpp/llfcChat/test/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/test/build/CMakeFiles /opt/test/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kao/cpp/llfcChat/test/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -109,6 +109,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named testredis
+
+# Build rule for target.
+testredis: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testredis
+.PHONY : testredis
+
+# fast build rule for target.
+testredis/fast:
+	$(MAKE) -f CMakeFiles/testredis.dir/build.make CMakeFiles/testredis.dir/build
+.PHONY : testredis/fast
 
 #=============================================================================
 # Target rules for targets named testjson
@@ -150,6 +163,33 @@ src/testjson.cpp.s:
 	$(MAKE) -f CMakeFiles/testjson.dir/build.make CMakeFiles/testjson.dir/src/testjson.cpp.s
 .PHONY : src/testjson.cpp.s
 
+src/testredis.o: src/testredis.cpp.o
+
+.PHONY : src/testredis.o
+
+# target to build an object file
+src/testredis.cpp.o:
+	$(MAKE) -f CMakeFiles/testredis.dir/build.make CMakeFiles/testredis.dir/src/testredis.cpp.o
+.PHONY : src/testredis.cpp.o
+
+src/testredis.i: src/testredis.cpp.i
+
+.PHONY : src/testredis.i
+
+# target to preprocess a source file
+src/testredis.cpp.i:
+	$(MAKE) -f CMakeFiles/testredis.dir/build.make CMakeFiles/testredis.dir/src/testredis.cpp.i
+.PHONY : src/testredis.cpp.i
+
+src/testredis.s: src/testredis.cpp.s
+
+.PHONY : src/testredis.s
+
+# target to generate assembly for a file
+src/testredis.cpp.s:
+	$(MAKE) -f CMakeFiles/testredis.dir/build.make CMakeFiles/testredis.dir/src/testredis.cpp.s
+.PHONY : src/testredis.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -158,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... testredis"
 	@echo "... testjson"
 	@echo "... src/testjson.o"
 	@echo "... src/testjson.i"
 	@echo "... src/testjson.s"
+	@echo "... src/testredis.o"
+	@echo "... src/testredis.i"
+	@echo "... src/testredis.s"
 .PHONY : help
 
 
