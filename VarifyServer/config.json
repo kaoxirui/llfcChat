@@ -1,0 +1,17 @@
+{
+    "email": {
+      "user": "kaoxirui@foxmail.com",
+      "pass": "gfqtlhasvlbuigfj"
+    },
+    "mysql":{
+        "host":"127.0.0.1",
+        "port":"3306",
+        "user":"root",
+        "passwd":"666666"    
+    },
+    "redis":{
+        "host":"127.0.0.1",
+        "port":"6379",
+        "passwd":"666666"
+    }
+}
