@@ -1,6 +1,9 @@
 //在cpp里include，防止互引用
 #include "HttpConnection.h"
 #include "LogicSystem.h"
+#include "MySqlMgr.h"
+#include "RedisMgr.h"
+#include "StatusGrpcClient.h"
 #include "VarifyGrpcClient.h"
 void LogicSystem::RegGet(std::string url, HttpHandler handler) {
     // LOG_DEBUG("LogicSystem::RegGet - Registering GET handler for URL: %s", url.c_str());
@@ -53,6 +56,235 @@ LogicSystem::LogicSystem() {
         LOG_DEBUG("email is %s", email.c_str());
         root["error"] = rsp.error();
         root["email"] = src_root["email"];
+        std::string jsonstr = root.toStyledString();
+        beast::ostream(connection->_response.body()) << jsonstr;
+        return true;
+    });
+    RegPost("/user_register", [](std::shared_ptr<HttpConnection> connection) {
+        // 将请求体缓冲区转换为字符串
+        auto body_str = boost::beast::buffers_to_string(connection->_request.body().data());
+        LOG_DEBUG("received body is %s", body_str.c_str());
+
+        // 设置响应的内容类型为 JSON
+        connection->_response.set(boost::beast::http::field::content_type, "text/json");
+
+        Json::Value root;     // 用于构建响应 JSON
+        Json::Value src_root; // 用于解析请求 JSON
+
+        // 创建 CharReaderBuilder 和 CharReader
+        Json::CharReaderBuilder readerBuilder;
+        std::string errs;
+
+        // 使用智能指针管理 CharReader 的生命周期
+        std::unique_ptr<Json::CharReader> reader(readerBuilder.newCharReader());
+
+        // 解析 JSON 字符串
+        bool parse_success =
+            reader->parse(body_str.c_str(), body_str.c_str() + body_str.size(), &src_root, &errs);
+
+        if (!parse_success) {
+            LOG_ERROR("Failed to parse JSON data!Error:%s", errs.c_str());
+            root["error"] = ErrorCodes::Error_Json;
+            // 将响应 JSON 转换为字符串
+            std::string jsonstr = root.toStyledString();
+            // 写入响应体
+            boost::beast::ostream(connection->_response.body()) << jsonstr;
+            return true;
+        }
+
+        std::string varify_code;
+        bool b_get_varify =
+            RedisMgr::GetInstance()->Get(CODEPREFIX + src_root["email"].asString(), varify_code);
+        LOG_DEBUG("1");
+        if (!b_get_varify) {
+            LOG_INFO(" get varify code expired ");
+            root["error"] = ErrorCodes::VarifyExpired;
+            std::string jsonstr = root.toStyledString();
+            beast::ostream(connection->_response.body()) << jsonstr;
+            return true;
+        }
+        LOG_DEBUG("2");
+
+        if (varify_code != src_root["varifycode"].asString()) {
+            LOG_INFO(" varify code error");
+            root["error"] = ErrorCodes::VarifyCodeErr;
+            std::string jsonstr = root.toStyledString();
+            beast::ostream(connection->_response.body()) << jsonstr;
+            return true;
+        }
+        LOG_DEBUG("3");
+
+        // 判断用户名在mysql中是否存在
+        auto email = src_root["email"].asString();
+        auto name = src_root["user"].asString();
+        auto pwd = src_root["passwd"].asString();
+        auto confirm = src_root["confirm"].asString();
+        LOG_DEBUG("4");
+
+        int uid = MySqlMgr::GetInstance()->RegUser(name, email, pwd);
+        if (uid == 0 || uid == -1) {
+            LOG_INFO("user or email exist:%d", uid);
+            root["error"] = ErrorCodes::UserExist;
+            std::string jsonstr = root.toStyledString();
+            beast::ostream(connection->_response.body()) << jsonstr;
+            return true;
+        }
+        LOG_DEBUG("5");
+
+        root["error"] = 0;
+        root["email"] = src_root["email"];
+        root["user"] = src_root["user"].asString();
+        root["passwd"] = src_root["passwd"].asString();
+        root["confirm"] = src_root["confirm"].asString();
+        root["varifycode"] = src_root["varifycode"].asString();
+        std::string jsonstr = root.toStyledString();
+        beast::ostream(connection->_response.body()) << jsonstr;
+        return true;
+    });
+
+    RegPost("/reset_pwd", [](std::shared_ptr<HttpConnection> connection) {
+        // 将请求体缓冲区转换为字符串
+        auto body_str = boost::beast::buffers_to_string(connection->_request.body().data());
+        LOG_INFO("receive body is ");
+
+        // 设置响应的内容类型为 JSON
+        connection->_response.set(boost::beast::http::field::content_type, "text/json");
+
+        Json::Value root;     // 用于构建响应 JSON
+        Json::Value src_root; // 用于解析请求 JSON
+
+        // 创建 CharReaderBuilder 和 CharReader
+        Json::CharReaderBuilder readerBuilder;
+        std::string errs;
+
+        // 使用智能指针管理 CharReader 的生命周期
+        std::unique_ptr<Json::CharReader> reader(readerBuilder.newCharReader());
+
+        // 解析 JSON 字符串
+        bool parse_success =
+            reader->parse(body_str.c_str(), body_str.c_str() + body_str.size(), &src_root, &errs);
+
+        if (!parse_success) {
+            LOG_INFO("Failed to parse JSON data! Error: %s", errs.c_str());
+            root["error"] = ErrorCodes::Error_Json;
+            // 将响应 JSON 转换为字符串
+            std::string jsonstr = root.toStyledString();
+            // 写入响应体
+            boost::beast::ostream(connection->_response.body()) << jsonstr;
+            return true;
+        }
+
+        std::string varify_code;
+        bool b_get_varify =
+            RedisMgr::GetInstance()->Get(CODEPREFIX + src_root["email"].asString(), varify_code);
+        if (!b_get_varify) {
+            LOG_INFO(" get varify code expired ");
+            root["error"] = ErrorCodes::VarifyExpired;
+            std::string jsonstr = root.toStyledString();
+            beast::ostream(connection->_response.body()) << jsonstr;
+            return true;
+        }
+
+        if (varify_code != src_root["varifycode"].asString()) {
+            LOG_INFO(" varify code error");
+            root["error"] = ErrorCodes::VarifyCodeErr;
+            std::string jsonstr = root.toStyledString();
+            beast::ostream(connection->_response.body()) << jsonstr;
+            return true;
+        }
+
+        // 判断用户名在mysql中是否存在
+        auto email = src_root["email"].asString();
+        auto name = src_root["user"].asString();
+        auto pwd = src_root["passwd"].asString();
+        bool email_valid = MySqlMgr::GetInstance()->CheckEmail(name, email);
+        if (!email_valid) {
+            LOG_INFO(" user email not match");
+            root["error"] = ErrorCodes::EmailNotMatch;
+            std::string jsonstr = root.toStyledString();
+            beast::ostream(connection->_response.body()) << jsonstr;
+            return true;
+        }
+
+        bool b_up = MySqlMgr::GetInstance()->UpdatePwd(name, pwd);
+        if (!b_up) {
+            LOG_INFO(" update pwd failed");
+            std::cout << " update pwd failed" << std::endl;
+            root["error"] = ErrorCodes::PasswdUpFailed;
+            std::string jsonstr = root.toStyledString();
+            beast::ostream(connection->_response.body()) << jsonstr;
+            return true;
+        }
+
+        LOG_INFO("succeed to update password");
+        root["error"] = 0;
+        root["email"] = email;
+        root["user"] = name;
+        root["passwd"] = pwd;
+        root["varifycode"] = src_root["varifycode"].asString();
+        std::string jsonstr = root.toStyledString();
+        beast::ostream(connection->_response.body()) << jsonstr;
+        return true;
+    });
+    RegPost("/user_login", [](std::shared_ptr<HttpConnection> connection) {
+        auto body_str = boost::beast::buffers_to_string(connection->_request.body().data());
+        LOG_INFO("receive body is ");
+        // 设置响应的内容类型为 JSON
+        connection->_response.set(boost::beast::http::field::content_type, "text/json");
+
+        Json::Value root;     // 用于构建响应 JSON
+        Json::Value src_root; // 用于解析请求 JSON
+
+        // 创建 CharReaderBuilder 和 CharReader
+        Json::CharReaderBuilder readerBuilder;
+        std::string errs;
+
+        // 使用智能指针管理 CharReader 的生命周期
+        std::unique_ptr<Json::CharReader> reader(readerBuilder.newCharReader());
+
+        // 解析 JSON 字符串
+        bool parse_success =
+            reader->parse(body_str.c_str(), body_str.c_str() + body_str.size(), &src_root, &errs);
+
+        if (!parse_success) {
+            LOG_INFO("Failed to parse JSON data! Error: %s", errs.c_str());
+            root["error"] = ErrorCodes::Error_Json;
+            // 将响应 JSON 转换为字符串
+            std::string jsonstr = root.toStyledString();
+            // 写入响应体
+            boost::beast::ostream(connection->_response.body()) << jsonstr;
+            return true;
+        }
+        auto email = src_root["email"].asString();
+        auto pwd = src_root["passwd"].asString();
+        UserInfo userInfo;
+        // 查mysql看能否登陆
+        bool pwd_valid = MySqlMgr::GetInstance()->CheckPwd(email, pwd, userInfo);
+        if (!pwd_valid) {
+            LOG_INFO(" user pwd not match");
+            root["error"] = ErrorCodes::PasswdInvalid;
+            std::string jsonstr = root.toStyledString();
+            beast::ostream(connection->_response.body()) << jsonstr;
+            return true;
+        }
+
+        //请求一个聊天服务器
+        auto reply = StatusGrpcClient::GetInstance()->GetChatServer(userInfo.uid);
+        if (reply.error()) {
+            LOG_ERROR(" grpc get chat server failed, error is %d", reply.error());
+            root["error"] = ErrorCodes::RPCFailed;
+            std::string jsonstr = root.toStyledString();
+            beast::ostream(connection->_response.body()) << jsonstr;
+            return true;
+        }
+        // 写回发，给客户端，客户端根据回发信息与真正的聊天服务器建立长连接
+        LOG_INFO("succeed to load userinfo uid is :%d", userInfo.uid);
+        root["error"] = 0;
+        root["email"] = email;
+        root["uid"] = userInfo.uid;
+        root["token"] = reply.token();
+        root["host"] = reply.host();
+        root["port"] = reply.port();
         std::string jsonstr = root.toStyledString();
         beast::ostream(connection->_response.body()) << jsonstr;
         return true;
