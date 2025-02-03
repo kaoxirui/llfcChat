@@ -24,6 +24,37 @@ sudo apt-get install libboost-dev libboost-test-dev libboost-all-dev
 
 nodejs环境不知道怎么在dockerfile中构建在VarifyServer下，直接在docker环境里安装要用的包，然后保存为新的镜像
 
+```shell
+mysql密码设置
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'your_new_password';
+FLUSH PRIVILEGES;
+
+mysql启动
+
+service mysql start
+
+登录
+
+mysql -u root -p
+
+navicat连不上docker里的mysql？
+
+localhost改成宿主机的IP
+```
+```shell
+启动redis：redis-server /etc/redis/redis.conf
+
+停止redis：service redis-server stop
+```
+
+redis-server /etc/redis/redis.conf
+
+proto文件生成
+
+ protoc --grpc_out=. --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin message.proto
+
+ protoc --cpp_out=. message.proto
 
 | 2025_1_15     | QT界面搭建，jsoncpp库安装      |
 | ------------- | ------------------------------ |
