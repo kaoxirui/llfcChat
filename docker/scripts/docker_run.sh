@@ -38,8 +38,13 @@ docker run -it -d \
 -e XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR \
 -v ${MONITOR_HOME_DIR}:/opt \
 -v ${XDG_RUNTIME_DIR}:${XDG_RUNTIME_DIR} \
+-v /home/kao/cpp/llfcChat/mysql/config/my.cnf:/etc/mysql/my.cnf \
+-v /home/kao/cpp/llfcChat/mysql/data/:/var/lib/mysql \
+-v /home/kao/cpp/llfcChat/mysql/logs:/logs \
 --network host \
-llfcchat:v2
+llfcchat:v4
+#-p 3308:3306 \
 
 # -v挂载  -e指定容器内的环境变量
 # -it交互  -d后台运行（不会影响此时的终端）
+#--network host \ 使用主机网络栈，不需要也不能进行端口映射
