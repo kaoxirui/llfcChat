@@ -1,4 +1,12 @@
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin/StatusServer)
+# include_directories(/usr/local/include)
+
+# find_package(Boost REQUIRED COMPONENTS system filesystem)
+# find_package(jsoncpp REQUIRED)
+# find_package(Protobuf REQUIRED)
+# find_package(gRPC CONFIG REQUIRED)
+set(COMMON_LIBS ${COMMON_LIBS} PARENT_SCOPE)
 file(GLOB StatusServer_SRC "*.cpp" "*.cc")
 add_executable(StatusServer ${StatusServer_SRC})
+# target_link_libraries(StatusServer log jsoncpp_lib Boost::system Boost::filesystem pthread gRPC::grpc++ jsoncpp hiredis mysqlcppconn)
 target_link_libraries(StatusServer ${COMMON_LIBS} log jsoncpp_lib)

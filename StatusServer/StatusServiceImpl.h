@@ -58,4 +58,4 @@ private:
     std::mutex _mtx;
 };
 
-extern std::string generate_unique_string()
+extern std::string generate_unique_string();

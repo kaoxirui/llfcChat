@@ -16,7 +16,7 @@
 #include <thread>
 
 void RunServer() {
-    auto &config_mgr = ConfigMgr::GetInstance();
+    auto &config_mgr = ConfigMgr::Inst();
     std::string server_address =
         config_mgr["StatusServer"]["host"] + ":" + config_mgr["StatusServer"]["port"];
     StatusServiceImpl service;
