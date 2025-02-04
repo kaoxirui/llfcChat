@@ -221,7 +221,7 @@ bool RedisMgr::HSet(const std::string &key, const std::string &hkey, const std::
         _con_pool->returnConnection(connect);
         return false;
     }
-    LOG_INFO("Execut command [ HSet %s,%s,%s ] failure ! ", key.c_str(), hkey.c_str(),
+    LOG_INFO("Execut command [ HSet %s,%s,%s ] success ! ", key.c_str(), hkey.c_str(),
              value.c_str());
     freeReplyObject(reply);
     _con_pool->returnConnection(connect);
@@ -249,7 +249,7 @@ bool RedisMgr::HSet(const char *key, const char *hkey, const char *hvalue, size_
         _con_pool->returnConnection(connect);
         return false;
     }
-    LOG_INFO("Execut command [ HSet %s,%s,%s ] failure ! ", key, hkey, hvalue);
+    LOG_INFO("Execut command [ HSet %s,%s,%s ] success ! ", key, hkey, hvalue);
     freeReplyObject(reply);
     _con_pool->returnConnection(connect);
     return true;
