@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.14)
 
 project(CChat)
 
+
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 
 #定义DEBUG宏，在编译时才能启用LOG_DEBUG输出
@@ -20,9 +21,9 @@ set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS} -O2 -DNDEBUG")
 include_directories(/usr/local/include)
 
 set(Boost_INCLUDE_DIR "/usr/include")
+set(Boost_LIBRARY_DIR "/usr/lib/x86_64-linux-gnu")
 find_package(Boost REQUIRED COMPONENTS system filesystem)
 find_package(jsoncpp REQUIRED)
-
 find_package(Protobuf REQUIRED)
 find_package(gRPC CONFIG REQUIRED)
 
@@ -35,11 +36,11 @@ set(COMMON_LIBS
   gRPC::grpc++
   jsoncpp
   hiredis
-#   mysqlcppconn
+  mysqlcppconn
 )
 
-# add_subdirectory(ChatServer)
+ add_subdirectory(ChatServer)
 # add_subdirectory(ChatServer2)
 add_subdirectory(GateServer)
 add_subdirectory(common)
-# add_subdirectory(StatusServer)
+add_subdirectory(StatusServer)
